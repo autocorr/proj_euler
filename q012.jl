@@ -2,7 +2,7 @@ tri(n::Int) = div(n * (n + 1), 2)
 
 function nod(n::Int)
     d = 0
-    top = int(sqrt(n))
+    top = int(√n)
     for i=1:top
         if n % i == 0
             d += 2
