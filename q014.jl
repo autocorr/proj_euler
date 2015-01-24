@@ -11,7 +11,7 @@ end
 immutable Collatz
     n::Int
     cl::Int
-    Collatz(n) = new(n, chain_length(n))
+    Collatz(n::Int) = new(n, chain_length(n))
 end
 
 function Base.max(x::Collatz, y::Collatz)
